@@ -25,10 +25,37 @@
     </style>
 
     <title>Gym Website</title>
+
+    <!-- optimeleon scripts-->
+
+    <script type="text/javascript">
+      !(function (h, i, e) {
+        var t = 3000;
+        var n = h.createElement("style");
+        n.id = e;
+        n.innerHTML = "body{opacity:0}";
+        h.head.appendChild(n);
+        i.rmfk = function () {
+          var t = h.getElementById(e);
+          t && t.parentNode.removeChild(t);
+        };
+        setTimeout(i.rmfk, t);
+      })(document, window, "optimeleon-overlay");
+    </script>
+
+    <script type="text/javascript">
+      window.setOptiCookieConsent = (consent) => {
+        localStorage.setItem("opti_consent", consent);
+      };
+    </script>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdn-stag.optimeleon.com/pan-2dtwv/ver-2dtx1/main.js"
+    ></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
   </body>
 </html>
