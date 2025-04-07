@@ -80,12 +80,13 @@
         api_host: "https://eu.i.posthog.com",
       });
 
-      posthog.capture("user_signed_up");
+      // posthog.capture("user_signed_up");
 
-      //   posthog.capture('user_signed_up', {
-      //     login_type: "email",
-      //     is_free_trial: true
-      // })
+      posthog.capture("user_signed_up", {
+        login_type: "email",
+        is_free_trial: true,
+        test_prop: true,
+      });
     </script>
   </head>
   <body>

@@ -7,6 +7,12 @@ const Join = ({ isOpen, onClose }) => {
     const form = useRef()
 
     const sendEmail = (e) => {
+        console.log("join now");
+        if(window.posthog){
+            window.posthog.capture("user_signed_up", {
+            join_now:"join",
+            join_click: true
+          });}
         e.preventDefault();
         
         emailjs.sendForm('service_h9g0btg', 'template_5urckpa', form.current, 'GJAtl73WZaFyf9KlA')
