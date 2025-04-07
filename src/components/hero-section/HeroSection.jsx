@@ -13,6 +13,9 @@ const HeroSection = () => {
     const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
     const transition = {type: 'spring', duration: 3}
     const mobile = window.innerWidth <= 768 ? true : false;
+    const sendEvent = (event)=>{
+       console.log(event);
+    }
 
     return (
         <div className="hero" id="home">
@@ -84,7 +87,7 @@ const HeroSection = () => {
             </div>
 
             <div className="right-h">
-                <button className="btn" onClick={() => setIsJoinModalOpen(true)}>Join Now</button>
+                <button className="btn" onClick={(e) => {setIsJoinModalOpen(true);sendEvent(e)}}>Join Now</button>
                 <motion.div 
                     initial={{ right: "-1rem" }}
                     whileInView={{ right: "4rem" }}
