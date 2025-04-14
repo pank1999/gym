@@ -25,21 +25,6 @@
     </style>
 
     <script type="text/javascript">
-      !(function (h, i, e) {
-        var t = 3000;
-        var n = h.createElement("style");
-        n.id = e;
-        n.innerHTML = "body{opacity:0}";
-        h.head.appendChild(n);
-        i.rmfk = function () {
-          var t = h.getElementById(e);
-          t && t.parentNode.removeChild(t);
-        };
-        setTimeout(i.rmfk, t);
-      })(document, window, "optimeleon-overlay");
-    </script>
-
-    <script type="text/javascript">
       window.setOptiCookieConsent = (consent) => {
         localStorage.setItem("opti_consent", consent);
       };
