@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../../assets/logo.png';
 import Bars from '../../assets/bars.png';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -31,15 +32,15 @@ const Header = () => {
           ) : (
           <ul className="header-menu">
             <li>
-              <Link
+              <RouterLink
+                style={{"text-decoration":"none",color:"white"}}
                 onClick={() => setMenuOpened(false)}
                 activeClass="active"
-                to='home'
-                span={true}
+                to='/'
                 smooth={true}
               >
                 Home
-              </Link>
+              </RouterLink>
             </li>
             <li onClick={() => setMenuOpened(false)}>
               <Link 
@@ -80,6 +81,11 @@ const Header = () => {
             >
               Testimonials
             </Link>
+            </li>
+            <li>
+              <RouterLink style={{"text-decoration":"none",color:"white"}} to="/blog?items=3" onClick={() => setMenuOpened(false)}>
+                Blog
+              </RouterLink>
             </li>
           </ul>
         )}
