@@ -1,14 +1,14 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './components/footer/Footer';
-import HeroSection from './components/hero-section/HeroSection';
-import Join from './components/join/Join';
-import Plans from './components/plans/Plans';
-import Programs from './components/programs/Programs';
-import Reasons from './components/reasons/Reasons';
-import Testimonials from './components/testimonials/Testimonials';
-import Blog from './components/blog/Blog';
-import Header from './components/header/Header';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import HeroSection from "./components/hero-section/HeroSection";
+import Join from "./components/join/Join";
+import Plans from "./components/plans/Plans";
+import Programs from "./components/programs/Programs";
+import Reasons from "./components/reasons/Reasons";
+import Testimonials from "./components/testimonials/Testimonials";
+import Blog from "./components/blog/Blog";
+import Header from "./components/header/Header";
 
 function App() {
   return (
@@ -28,10 +28,15 @@ function App() {
               </>
             }
           />
-          <Route path="/blog" element={ <>
-            <HeroSection />
-            <Blog />
-          </> } />
+          <Route
+            path="/blog"
+            element={
+              <>
+                <HeroSection />
+                <Blog />
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </div>
