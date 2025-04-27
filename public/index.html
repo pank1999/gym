@@ -48,7 +48,10 @@
             "https://cdn-stag.optimeleon.com/gym-xviya/ver-xviya/main.js"),
           (l = t.getElementsByTagName(n)[0]).parentNode.insertBefore(a, l));
       })(window, document, "script"),
-        optimeleon.init(!1);
+        optimeleon("init", false);
+        optimeleon("track", "$pageview", {
+          $current_url: window.location.href,
+        });
     </script>
   </head>
   <body>
