@@ -65,9 +65,10 @@
         };
 
         optimeleonFunction.push = optimeleonFunction;
-        optimeleonFunction.loaded = true;
+        optimeleonFunction.loaded = false;
         optimeleonFunction.version = "1.0";
         optimeleonFunction.queue = [];
+        optimeleonFunction.autocapture = true;
 
         scriptElement = document.createElement(tagName);
         scriptElement.async = true;
