@@ -24,9 +24,10 @@
       }
     </style>
     <title>Gym Website</title>
+
     <script type="text/javascript">
       !(function (h, i, e) {
-        var t = 3000;
+        var t = 2000;
         var n = h.createElement("style");
         n.id = e;
         n.innerHTML = "body{opacity:0}";
@@ -38,6 +39,7 @@
         setTimeout(i.rmfk, t);
       })(document, window, "optimeleon-overlay");
     </script>
+
     <script type="text/javascript">
       window.setOptiCookieConsent = (consent) => {
         localStorage.setItem("opti_consent", consent);
@@ -46,8 +48,29 @@
     <script
       type="text/javascript"
       async
-      src="https://cdn-stag.optimeleon.com/gym-xviya/ver-xviya/main.js"
+      src="https://cdn-stag.optimeleon.com/gym-xviya/ver-xviya/v1.main.js"
     ></script>
+    <script type="text/javascript" async>
+      !(function (e, t, o, n, a, i, c) {
+        e.optimeleon ||
+          ((a = e.optimeleon =
+            function () {
+              a.callMethod
+                ? a.callMethod.apply(a, arguments)
+                : a.queue.push(arguments);
+            }),
+          (a.push = a),
+          (a.loaded = !1),
+          (a.version = "1.0"),
+          (a.autocapture = !0),
+          (a.queue = []),
+          ((i = t.createElement(o)).async = !0),
+          (i.src =
+            "https://cdn-stag.optimeleon.com/gym-xviya/ver-xviya/v1.main.js"),
+          (c = t.getElementsByTagName(o)[0]).parentNode.insertBefore(i, c));
+      })(window, document, "script"),
+        optimeleon("init", !0, !1);
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
