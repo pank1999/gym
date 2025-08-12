@@ -83,8 +83,8 @@ const HeroSection = () => {
                 <div className="hero-buttons">
                     <button className="btn" onClick={() => setIsJoinModalOpen(true)}>Get Started</button>
                     <button className="btn">Learn More</button>
-                <a href='#optimeleon' style={{backgroundColor: "white",padding:"5px"}}>Test</a>
-
+                <a href="#optimeleon" style={{backgroundColor: "white",padding:"5px"}}>Starts with #</a>
+                <a href='/about' style={{backgroundColor: "white",padding:"5px"}}>Starts with /</a>
                 </div>
             </div>
 

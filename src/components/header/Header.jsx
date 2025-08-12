@@ -78,7 +78,7 @@ const Header = () => {
               </RouterLink>
             </li>
             <li>
-              <RouterLink style={{"text-decoration":"none",color:"white"}} to="/blog?items=3" onClick={() => setMenuOpened(false)}>
+              <RouterLink style={{"text-decoration":"none",color:"white"}} to="/blog" onClick={() => setMenuOpened(false)}>
                 Blog
               </RouterLink>
             </li>
