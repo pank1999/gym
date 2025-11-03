@@ -13,6 +13,7 @@ const Join = ({ isOpen, onClose }) => {
             join_now:"join",
             join_click: true
           });}
+        if(window.optimeleon){window.optimeleon("track", "user_signed_up_optimeleon")}
         e.preventDefault();
         
         emailjs.sendForm('service_h9g0btg', 'template_5urckpa', form.current, 'GJAtl73WZaFyf9KlA')
