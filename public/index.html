@@ -24,8 +24,32 @@
       }
     </style>
     <title>Gym Website</title>
-<script type="text/javascript"> window.setOptiCookieConsent = function(consent) { localStorage.setItem("opti_consent", consent); }; </script>
-<script type="text/javascript"> !function(e,n,t,o,c,a,l){e.optimeleon||(c=e.optimeleon=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},c.push=c,c.queue=[],(a=n.createElement(t)),a.src="https://cdn-stag.optimeleon.com/gym-nee2g/ver-nee2h/v1.main.js",(l=n.getElementsByTagName(t)[0]).parentNode.insertBefore(a,l))}(window,document,"script"); optimeleon("init",true,true); </script>
+
+<script type="text/javascript"> !(function (h, i, e) {
+  var t = 5000;
+  var n = h.createElement("style");
+  n.id = e;
+  n.innerHTML = "body{opacity:0}";
+  h.head.appendChild(n);
+  i.rmfk = function () {
+    var t = h.getElementById(e);
+    t && t.parentNode.removeChild(t);
+  };
+  setTimeout(i.rmfk, t);
+})(document, window, "optimeleon-overlay"); </script>
+
+        
+<script type="text/javascript">
+  window.setOptiCookieConsent = function(consent) {
+    localStorage.setItem("opti_consent", consent);
+  };
+</script>
+
+          <script type="text/javascript" defer src="https://cdn-stag.optimeleon.com/gym-nee2g/ver-nee2h/v1.main.js"></script>
+           <script type="text/javascript" defer >!function(e,t,n,o,c,l,m){e.optimeleon||(c=e.optimeleon=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},c.push=c,c.queue=[],(l=t.createElement(n)).defer=!0,l.src="https://cdn-stag.optimeleon.com/gym-nee2g/ver-nee2h/v1.main.js",(m=t.getElementsByTagName(n)[0]).parentNode.insertBefore(l,m))}(window,document,"script");
+  optimeleon("init",true,true); </script>
+              
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
