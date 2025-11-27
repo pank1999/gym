@@ -81,7 +81,10 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className="hero-buttons">
-                    <button className="btn" onClick={() => setIsJoinModalOpen(true)}>Get Started</button>
+                    <button className="btn" onClick={() => {
+                        setIsJoinModalOpen(true)
+                        window.optimeleon('track', 'a_good_custom_event')
+                    }}>Get Started</button>
                     <button className="btn">Learn More</button>
                 <a href="#optimeleon" style={{backgroundColor: "white",padding:"5px"}}>Starts with #</a>
                 <a href='/about' style={{backgroundColor: "white",padding:"5px"}}>Starts with /</a>
