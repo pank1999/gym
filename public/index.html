@@ -20,16 +20,41 @@
   </style>
   <title>Gym Website</title>
 
-  <script type="text/javascript"> !(function (h, i, e) { var t = 5000; var n = h.createElement("style"); n.id = e; n.innerHTML = "body{opacity:0}"; h.head.appendChild(n); i.rmfk = function () { var t = h.getElementById(e); t && t.parentNode.removeChild(t); }; setTimeout(i.rmfk, t); })(document, window, "optimeleon-overlay"); </script>
-  <script type="text/javascript"> window.setOptiCookieConsent = function(consent) { localStorage.setItem("opti_consent", consent); }; </script>
-  <script type="text/javascript" async> !function(e,t,n,o,c,p,l){e.optimeleon||(c=e.optimeleon=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},c.push=c,c.queue=[],(p=t.createElement(n)).async=!0,p.src="https://cdn-stag.optimeleon.com/pan-lcpim/ver-lcpiw/v1.main.js",(l=t.getElementsByTagName(n)[0]).parentNode.insertBefore(p,l))}(window,document,"script"); optimeleon("init",true,true); </script>
-<body>
+
+  <script type="text/javascript">
+    window.setOptiCookieConsent = function (consent) {
+      localStorage.setItem("opti_consent", consent);
+    };
+  </script>
+
+  <script type="text/javascript" async>
+    !(function (h, i, e) {
+      var t = 5000;
+      var n = h.createElement("style");
+      n.id = e;
+      n.innerHTML = "body{opacity:0}";
+      h.head.appendChild(n);
+      i.rmfk = function () {
+        var t = h.getElementById(e);
+        t && t.parentNode.removeChild(t);
+      };
+      setTimeout(i.rmfk, t);
+    })(document, window, "optimeleon-overlay");
+
+    !function (e, t, n, o, c, p, l) { e.optimeleon || (c = e.optimeleon = function () { c.callMethod ? c.callMethod.apply(c, arguments) : c.queue.push(arguments) }, c.push = c, c.queue = [], (p = t.createElement(n)).async = !0, p.src = "https://cdn-stag.optimeleon.com/pan-lcpim/ver-lcpiw/v1.main.js", (l = t.getElementsByTagName(n)[0]).parentNode.insertBefore(p, l)) }(window, document, "script");
+    optimeleon("init", true, true); </script>
+
+  <script type="text/javascript">
+    !(function () {
+      window.setOptiCookieConsent("yes");
+    })();
+  </script>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQNT9DH3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQNT9DH3" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div id="root"></div>
-</body>
+  </body>
 
 </html>
