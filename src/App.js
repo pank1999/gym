@@ -8,7 +8,6 @@ import Programs from "./components/programs/Programs";
 import Reasons from "./components/reasons/Reasons";
 import Testimonials from "./components/testimonials/Testimonials";
 import Blog from "./components/blog/Blog";
-import Header from "./components/header/Header";
 
 function App() {
   return (
