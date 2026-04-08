@@ -7,14 +7,14 @@ import Calories from '../../assets/calories.png';
 import NumberCounter from 'number-counter'
 import './HeroSection.css'
 import Join from '../join/Join';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const HeroSection = () => {
     const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
-    const transition = {type: 'spring', duration: 3}
+    const transition = { type: 'spring', duration: 3 }
     const mobile = window.innerWidth <= 768 ? true : false;
-    const sendEvent = (event)=>{
-       console.log(event);
+    const sendEvent = (event) => {
+        console.log(event);
     }
 
     return (
@@ -22,11 +22,11 @@ const HeroSection = () => {
             <div className="blur hero-blur"></div>
             <div className="left-h">
                 <Header />
-                <div className="the-best-ad">
+                <div className="the-best-ad my-class">
                     <motion.div
-                        initial={{left: mobile ? "165px" : "238px"}}
-                        whileInView={{left: '8px'}}
-                        transition={{...transition, type: "tween"}}
+                        initial={{ left: mobile ? "165px" : "238px" }}
+                        whileInView={{ left: '8px' }}
+                        transition={{ ...transition, type: "tween" }}
                     ></motion.div>
                     <span>the best fitness club in the town</span>
                 </div>
@@ -48,33 +48,33 @@ const HeroSection = () => {
                 <div className="figures">
                     <div>
                         <span>
-                            <NumberCounter 
-                                end={140} 
-                                start={69} 
+                            <NumberCounter
+                                end={140}
+                                start={69}
                                 delay="3"
-                                preFix="+" 
+                                preFix="+"
                             />
                         </span>
                         <span>expert coachs</span>
                     </div>
                     <div>
                         <span>
-                            <NumberCounter 
-                                end={978} 
-                                start={779} 
+                            <NumberCounter
+                                end={978}
+                                start={779}
                                 delay="3"
-                                preFix="+" 
+                                preFix="+"
                             />
                         </span>
                         <span>members</span>
                     </div>
                     <div>
                         <span>
-                            <NumberCounter 
-                                end={50} 
-                                start={10} 
+                            <NumberCounter
+                                end={50}
+                                start={10}
                                 delay="3"
-                                preFix="+" 
+                                preFix="+"
                             />
                         </span>
                         <span>fitness programs</span>
@@ -86,14 +86,14 @@ const HeroSection = () => {
                         window.optimeleon('track', 'a_good_custom_event')
                     }}>Get Started</button>
                     <button className="btn">Learn More</button>
-                <a href="#optimeleon" style={{backgroundColor: "white",padding:"5px"}}>Starts with #</a>
-                <a href='/about' style={{backgroundColor: "white",padding:"5px"}}>Starts with /</a>
+                    <a href="#optimeleon" style={{ backgroundColor: "white", padding: "5px" }}>Starts with #</a>
+                    <a href='/about' style={{ backgroundColor: "white", padding: "5px" }}>Starts with /</a>
                 </div>
             </div>
 
             <div className="right-h">
-                <button className="btn" onClick={(e) => {setIsJoinModalOpen(true);sendEvent(e)}}>Join Now</button>
-                <motion.div 
+                <button className="btn my-class2" onClick={(e) => { setIsJoinModalOpen(true); sendEvent(e) }}>Join Now</button>
+                <motion.div
                     initial={{ right: "-1rem" }}
                     whileInView={{ right: "4rem" }}
                     transition={transition}
@@ -104,26 +104,26 @@ const HeroSection = () => {
                     <span>116 bpm</span>
                 </motion.div>
                 <img src={hero_image} alt="" className="hero-image" />
-                <motion.img 
+                <motion.img
                     initial={{ right: '11rem' }}
                     whileInView={{ right: "28rem" }}
                     transition={transition}
-                    src={hero_image_back} 
+                    src={hero_image_back}
                     alt=""
-                    className="hero-image-back" 
+                    className="hero-image-back"
                 />
-                <motion.div 
+                <motion.div
                     initial={{ right: "37rem" }}
                     whileInView={{ right: "28rem" }}
                     transition={transition}
                     className="calories"
                 >
-                    <img src={Calories} alt=""/>
+                    <img src={Calories} alt="" />
                     <div>
                         <span>Calories Burned</span>
                         <span>220 kcal</span>
                     </div>
-                </motion.div>  
+                </motion.div>
             </div>
             <Join isOpen={isJoinModalOpen} onClose={() => setIsJoinModalOpen(false)} />
         </div>
